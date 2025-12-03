@@ -11,13 +11,13 @@ function Counter(){
     }
     const resetSerie=() =>{
         setPrevCount(1)
-        setCount(1)
+        setCount(0)
     }
     return (
         <div className='counter'>
             <h2>Counter: {count}</h2>
-            <div className='buttons'>
-                <button onClick={() => setCount(count - 1)}>-</button>
+            <div className='buttons'>         
+                
                 <button onClick={() => resetSerie()}>Reset</button>
                 <button onClick={() => nextFibonacci()}>+</button>
             </div>
